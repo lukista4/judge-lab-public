@@ -1,0 +1,52 @@
+{
+ "label": "MEASURED (aggregates only; the proofs and per-item grades are not published)",
+ "regime": "394 proofs written by a 9B model (Qwen3.5-9B) on olympiad-style problems, each graded 0-7 by the reference grader (grader A, GPT family) and by each candidate grader; agreement with grader A, NOT accuracy against humans",
+ "hi_threshold": 6,
+ "candidates": {
+  "Mistral (hosted)": {
+   "n": 394,
+   "mean_cand": 4.348,
+   "mean_ref": 3.327,
+   "mean_diff_cand_minus_ref": 1.02,
+   "exact": 0.447,
+   "within1": 0.657,
+   "qwk": 0.75,
+   "hi_both": 141,
+   "hi_cand_only": 29,
+   "hi_ref_only": 9,
+   "lo_both": 215,
+   "precision_hi_vs_ref": 0.829,
+   "recall_hi_vs_ref": 0.94
+  },
+  "GLM (hosted)": {
+   "n": 394,
+   "mean_cand": 3.251,
+   "mean_ref": 3.327,
+   "mean_diff_cand_minus_ref": -0.076,
+   "exact": 0.647,
+   "within1": 0.931,
+   "qwk": 0.924,
+   "hi_both": 129,
+   "hi_cand_only": 6,
+   "hi_ref_only": 21,
+   "lo_both": 238,
+   "precision_hi_vs_ref": 0.956,
+   "recall_hi_vs_ref": 0.86
+  },
+  "Claude Sonnet": {
+   "n": 394,
+   "mean_cand": 2.759,
+   "mean_ref": 3.327,
+   "mean_diff_cand_minus_ref": -0.569,
+   "exact": 0.553,
+   "within1": 0.868,
+   "qwk": 0.926,
+   "hi_both": 127,
+   "hi_cand_only": 3,
+   "hi_ref_only": 23,
+   "lo_both": 241,
+   "precision_hi_vs_ref": 0.977,
+   "recall_hi_vs_ref": 0.847
+  }
+ }
+}

@@ -10,5 +10,11 @@ Modules
   equiv        Stage 0 and Stage 1 equivalence gates (numpy only)
   stage0_gate  the post-run Stage 0 verdict with input pre-checks
   stage0b      bf16 pre-cast logit capture and the rounding-flip mechanism check
+  calibration     grader marks vs human marks; band-stratified selection; grader-vs-grader agreement
+  judge_validity  known-answer, position-swapped validity test for pairwise judges
+  canary          planted-flaw control records for LLM reviewers
+  garble          statement-garbling detector and generator <-> marker statement contract
+  rubric          scale maps and max-over-paths scoring for rubric audits
+  evalstats       paired bootstrap, cross-fit calibration, ECE null band, predictive dev band
 """
-__version__ = "0.1.0"
+__version__ = "0.2.0"
