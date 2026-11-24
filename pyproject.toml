@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+authors = [{ name = "Lukáš Staník", email = "lukista4@gmail.com" }]
+name = "judgelab"
+version = "0.1.0"
+description = "In-process vLLM judge reader and reader-equivalence test kit for LLM proof judges"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = ["numpy"]
+
+[project.optional-dependencies]
+torch = ["torch"]
+vllm = ["vllm"]
+tokenizers = ["tokenizers"]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

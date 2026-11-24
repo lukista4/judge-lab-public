@@ -1,0 +1,26 @@
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# environments and secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# run outputs and data (never committed)
+*.jsonl
+REPORT*.json
+CAPTURE*.json
+*_DIAG.json
+data/
+models/
+adapters/
+*.safetensors
+*.bin
+logs/
